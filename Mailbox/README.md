@@ -1,3 +1,5 @@
-# Sketch Ultrasonic sensor with  ESP-12E Development Board
+# Smart Mailbox with Blynk 
 
-System will detect , if your post mailbox has a new post or it’s still empty.
+# Connect the sketch with Blynk app
+
+	Connect the resulting data from ultrasonic to the notification sent to Blynk app.
