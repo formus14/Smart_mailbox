@@ -11,4 +11,5 @@ One of the features that is offered in that project is the connection coverage s
 
 
 1)  Detect if there is a new post inside the postbox.
+
 2)  Notify the user by the mobile app with the detection result.
