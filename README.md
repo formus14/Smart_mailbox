@@ -1,4 +1,4 @@
-# Smart_mailbox
+# Smart Mailbox
 
 # Overview :
 
