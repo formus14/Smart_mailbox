@@ -2,4 +2,6 @@
 
 ## Connect the sketch with Blynk app
 
-	Connect the resulting data from ultrasonic to the notification sent to Blynk app.
+Sketch functionality :
+
+Connect the resulting data from ultrasonic with the notification sent to Blynk app.
