@@ -9,22 +9,21 @@ SimpleTimer timer;
 WidgetLCD lcd(V1);
 
 // You should get Auth Token in the Blynk App.
-// Go to the Project Settings (nut icon).
 char auth[] = "72967a142b504f7e9b3aa83ecad33bd7";
 
 void Read_Values(){
-  digitalWrite(trigPin, LOW);  // Added this line
-  delayMicroseconds(2); // Added this line
+  digitalWrite(trigPin, LOW);  
+  delayMicroseconds(2); 
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(1000); 
-  delayMicroseconds(10); // Added this line
+  delayMicroseconds(10); 
   digitalWrite(trigPin, LOW);
   
   long duration, distance;
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2) / 29.1;
   //Serial.println(distance);
-  if (distance < 4) {  // This is where the LED On/Off happens
+  if (distance < 4) {  
   Serial.println("You have one Mail");
   lcd.clear(); //Use it to clear the LCD Widget
   lcd.print(0, 0, "New post in"); // use: (position X: 0-15, position Y: 0-1, "Message you want to print")
