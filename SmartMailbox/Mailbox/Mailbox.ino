@@ -9,7 +9,7 @@ SimpleTimer timer;
 WidgetLCD lcd(V1);
 
 // You should get Auth Token in the Blynk App.
-char auth[] = "72967a142b504f7e9b3aa83ecad33bd7";
+char auth[] = "";
 
 void Read_Values(){
   digitalWrite(trigPin, LOW);  
@@ -44,7 +44,7 @@ void setup() {
   Serial.begin (9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
-  Blynk.begin(auth, "Romanista", "12341234");
+  Blynk.begin(auth, "WIFI Network", "WIFI PASSWORD"); // add your wifi network and password between the " "
   while (Blynk.connect() == false) {
     // Wait until its connected
   }
